@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mentoria</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page">
+      <header>
+        <h1>avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img id="logo" src="/images/rating.svg" alt="Balão com 5 estrelas representando avaliação, sendo que 3 estrelas estão preenchidas" />
+      </header>
+      <main>
+        <div class="title">
+          <h2>Informações pessoais</h2>
+        </div>
+        <form id="form-mentoring">
+          <div class="form-content">
+            <fieldset>
+              <div class="container">
+                <div class="container-group">
+                  <div class="container-input">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" />
+                  </div>
+
+                  <div class="container-input">
+                    <label for="lastname">Sobrenome</label>
+                    <input type="text" name="lastname" id="lastname" />
+                  </div>
+                </div>
+
+                <div class="container-group">
+                  <div class="container-input">
+                    <label for="email">E-mail <span>(digite um email válido)</span></label>
+                    <input type="email" name="email" id="email" />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Informações do mentor</legend>
+
+              <div class="container">
+                <div class="container-group">
+                  <div class="container-input">
+                    <label for="mentor-name">Selecione quem foi o seu mentor</label>
+                    <select name="mentor-name" id="mentor-name">
+                      <option value="1">Jonathan</option>
+                      <option value="2">Sousa</option>
+                      <option value="3">Cubillos</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="container-group">
+                  <div class="container-input">
+                    <label for="feedback">Feedback sobre o mentor</label>
+                    <textarea name="feedback" id="feedback"></textarea>
+                  </div>
+                </div>
+
+                <div class="container-group">
+                  <div class="container-checkbox">
+                    <input type="checkbox" name="all-question-resolved" id="all-question-resolved" />
+                    <label for="all-question-resolved">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Agendando próxima mentoria</legend>
+
+              <div class="container">
+                <div class="container-group-date">
+                  <div class="container-input">
+                    <label for="date">Data <span>(DD/MM/AAAA)</span></label>
+                    <input type="date" name="date" id="date" />
+                  </div>
+
+                  <div class="container-input">
+                    <label for="begin">Das</label>
+                    <input type="time" name="begin" id="begin" />
+                  </div>
+
+                  <div class="container-input">
+                    <label for="end">Até</label>
+                    <input type="time" name="end" id="end" />
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-actions">
+            <button type="submit">Salvar</button>
+          </div>
+        </form>
+      </main>
+    </div>
+  </body>
+</html>
